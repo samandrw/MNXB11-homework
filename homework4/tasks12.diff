@@ -1,0 +1,407 @@
+Only in /home/sa5104an: .apptainer
+Only in /home/sa5104an: .bash_history
+diff -y /etc/skel/.bash_logout /home/sa5104an/.bash_logout
+# ~/.bash_logout						# ~/.bash_logout
+
+Only in /home/sa5104an: .bash_logout~
+diff -y /etc/skel/.bash_profile /home/sa5104an/.bash_profile
+# .bash_profile							# .bash_profile
+
+# Get the aliases and functions					# Get the aliases and functions
+if [ -f ~/.bashrc ]; then					if [ -f ~/.bashrc ]; then
+	. ~/.bashrc							. ~/.bashrc
+fi								fi
+
+# User specific environment and startup programs		# User specific environment and startup programs
+							      >	export PATH="/projects/hep/fs10/mnxb11/bin:$PATH"Only in /home/sa5104an: .bash_profile~
+diff -y /etc/skel/.bashrc /home/sa5104an/.bashrc
+# .bashrc							# .bashrc
+
+# Source global definitions					# Source global definitions
+if [ -f /etc/bashrc ]; then					if [ -f /etc/bashrc ]; then
+	. /etc/bashrc							. /etc/bashrc
+fi								fi
+
+# User specific environment					# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]		if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then								then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"			    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi								fi
+export PATH							export PATH
+
+# Uncomment the following line if you don't like systemctl's 	# Uncomment the following line if you don't like systemctl's 
+# export SYSTEMD_PAGER=						# export SYSTEMD_PAGER=
+
+# User specific aliases and functions				# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then					if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do					for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then						if [ -f "$rc" ]; then
+			. "$rc"								. "$rc"
+		fi								fi
+	done								done
+fi								fi
+
+unset rc							unset rc
+Only in /home/sa5104an: .bashrc~
+Only in /home/sa5104an: .cache
+Only in /home/sa5104an: .config
+diff -y /etc/skel/.emacs /home/sa5104an/.emacs
+;; .emacs							;; .emacs
+
+(custom-set-variables						(custom-set-variables
+ ;; uncomment to always end a file with a newline		 ;; uncomment to always end a file with a newline
+ ;'(require-final-newline t)					 ;'(require-final-newline t)
+ ;; uncomment to disable loading of "default.el" at startup	 ;; uncomment to disable loading of "default.el" at startup
+ ;'(inhibit-default-init t)					 ;'(inhibit-default-init t)
+ ;; default to unified diffs					 ;; default to unified diffs
+ '(diff-switches "-u"))						 '(diff-switches "-u"))
+
+;;; uncomment for CJK utf-8 support for non-Asian users		;;; uncomment for CJK utf-8 support for non-Asian users
+;; (require 'un-define)						;; (require 'un-define)
+Only in /home/sa5104an: .emacs~
+Only in /home/sa5104an: .gitconfig
+Only in /home/sa5104an: .java
+Only in /home/sa5104an: .kshrc
+Only in /home/sa5104an: .kshrc~
+Only in /home/sa5104an: .lesshst
+Only in /home/sa5104an: .local
+Only in /home/sa5104an: .mozilla
+Only in /home/sa5104an: .nv
+Only in /home/sa5104an: .pki
+Only in /home/sa5104an: .ssh
+Only in /home/sa5104an: .updated
+Only in /home/sa5104an: .vscode
+Only in /home/sa5104an: .zshrc
+Only in /home/sa5104an: .zshrc~
+Only in /home/sa5104an: DIR_COLORS
+Only in /home/sa5104an: DIR_COLORS.lightbgcolor
+Only in /home/sa5104an: Desktop
+Only in /home/sa5104an: Documents
+Only in /home/sa5104an: Downloads
+Only in /home/sa5104an: GREP_COLORS
+Only in /home/sa5104an: Music
+Only in /home/sa5104an: NetworkManager
+Only in /home/sa5104an: OpenCL
+Only in /home/sa5104an: PackageKit
+Only in /home/sa5104an: Pictures
+Only in /home/sa5104an: Public
+Only in /home/sa5104an: TOP-MNXB11
+Only in /home/sa5104an: Templates
+Only in /home/sa5104an: UPower
+Only in /home/sa5104an: Videos
+Only in /home/sa5104an: X11
+Only in /home/sa5104an: a.out
+Only in /home/sa5104an: accountsservice
+Only in /home/sa5104an: adjtime
+Only in /home/sa5104an: aliases
+Only in /home/sa5104an: aliases.db
+Only in /home/sa5104an: alsa
+Only in /home/sa5104an: alternatives
+Only in /home/sa5104an: anacrontab
+Only in /home/sa5104an: answers.sh
+Only in /home/sa5104an: appstream.conf
+Only in /home/sa5104an: apptainer
+Only in /home/sa5104an: asciidoc
+Only in /home/sa5104an: asound.conf
+Only in /home/sa5104an: at.deny
+Only in /home/sa5104an: audit
+Only in /home/sa5104an: authselect
+Only in /home/sa5104an: auto.cvmfs
+Only in /home/sa5104an: auto.master
+Only in /home/sa5104an: auto.master.d
+Only in /home/sa5104an: auto.misc
+Only in /home/sa5104an: auto.net
+Only in /home/sa5104an: auto.smb
+Only in /home/sa5104an: autofs.conf
+Only in /home/sa5104an: avahi
+Only in /home/sa5104an: bash_completion.d
+Only in /home/sa5104an: bashrc
+Only in /home/sa5104an: bindresvport.blacklist
+Only in /home/sa5104an: binfmt.d
+Only in /home/sa5104an: bluetooth
+Only in /home/sa5104an: brltty
+Only in /home/sa5104an: brltty.conf
+Only in /home/sa5104an: certmonger
+Only in /home/sa5104an: chromium
+Only in /home/sa5104an: chrony.conf
+Only in /home/sa5104an: cifs-utils
+Only in /home/sa5104an: cockpit
+Only in /home/sa5104an: compiles_with_warning.cxx
+Only in /home/sa5104an: containers
+Only in /home/sa5104an: cron.d
+Only in /home/sa5104an: cron.daily
+Only in /home/sa5104an: cron.deny
+Only in /home/sa5104an: cron.hourly
+Only in /home/sa5104an: cron.monthly
+Only in /home/sa5104an: cron.weekly
+Only in /home/sa5104an: crontab
+Only in /home/sa5104an: crypto-policies
+Only in /home/sa5104an: csh.cshrc
+Only in /home/sa5104an: csh.login
+Only in /home/sa5104an: cufile.json
+Only in /home/sa5104an: cups
+Only in /home/sa5104an: cupshelpers
+Only in /home/sa5104an: cvmfs
+Only in /home/sa5104an: dbus-1
+Only in /home/sa5104an: dconf
+Only in /home/sa5104an: debuginfod
+Only in /home/sa5104an: default
+Only in /home/sa5104an: depmod.d
+Only in /home/sa5104an: dhcp
+Only in /home/sa5104an: dkms
+Only in /home/sa5104an: dnf
+Only in /home/sa5104an: dnsmasq.conf
+Only in /home/sa5104an: dnsmasq.d
+Only in /home/sa5104an: dracut.conf
+Only in /home/sa5104an: dracut.conf.d
+Only in /home/sa5104an: egl
+Only in /home/sa5104an: enscript.cfg
+Only in /home/sa5104an: environment
+Only in /home/sa5104an: environment-modules
+Only in /home/sa5104an: ethertypes
+Only in /home/sa5104an: exports
+Only in /home/sa5104an: exports.d
+Only in /home/sa5104an: favicon.png
+Only in /home/sa5104an: fcoe
+Only in /home/sa5104an: filesystems
+Only in /home/sa5104an: firefox
+Only in /home/sa5104an: firewalld
+Only in /home/sa5104an: flatpak
+Only in /home/sa5104an: fonts
+Only in /home/sa5104an: foomatic
+Only in /home/sa5104an: fprintd.conf
+Only in /home/sa5104an: fstab
+Only in /home/sa5104an: fstab.old
+Only in /home/sa5104an: fuse.conf
+Only in /home/sa5104an: fwupd
+Only in /home/sa5104an: gcrypt
+Only in /home/sa5104an: gdbinit
+Only in /home/sa5104an: gdbinit.d
+Only in /home/sa5104an: gdm
+Only in /home/sa5104an: geoclue
+Only in /home/sa5104an: git
+Only in /home/sa5104an: glvnd
+Only in /home/sa5104an: gnupg
+Only in /home/sa5104an: gpfs
+Only in /home/sa5104an: grafana
+Only in /home/sa5104an: groff
+Only in /home/sa5104an: group
+Only in /home/sa5104an: group-
+Only in /home/sa5104an: grub.d
+Only in /home/sa5104an: grub2-efi.cfg
+Only in /home/sa5104an: grub2.cfg
+Only in /home/sa5104an: gss
+Only in /home/sa5104an: gssproxy
+Only in /home/sa5104an: hello_world
+Only in /home/sa5104an: helloworld.cpp
+Only in /home/sa5104an: host.conf
+Only in /home/sa5104an: hostname
+Only in /home/sa5104an: hosts
+Only in /home/sa5104an: hp
+Only in /home/sa5104an: ibutils2
+Only in /home/sa5104an: idmapd.conf
+Only in /home/sa5104an: infiniband
+Only in /home/sa5104an: infiniband-diags
+Only in /home/sa5104an: init.d
+Only in /home/sa5104an: inittab
+Only in /home/sa5104an: inputrc
+Only in /home/sa5104an: ipa
+Only in /home/sa5104an: iproute2
+Only in /home/sa5104an: ipsec.conf
+Only in /home/sa5104an: ipsec.d
+Only in /home/sa5104an: iscsi
+Only in /home/sa5104an: issue
+Only in /home/sa5104an: issue.d
+Only in /home/sa5104an: issue.net
+Only in /home/sa5104an: iwpmd.conf
+Only in /home/sa5104an: java
+Only in /home/sa5104an: jvm
+Only in /home/sa5104an: jvm-common
+Only in /home/sa5104an: kdump
+Only in /home/sa5104an: kdump.conf
+Only in /home/sa5104an: kernel
+Only in /home/sa5104an: keyutils
+Only in /home/sa5104an: krb5.conf
+Only in /home/sa5104an: krb5.conf.d
+Only in /home/sa5104an: krb5.conf.ipabkp
+Only in /home/sa5104an: kshrc
+Only in /home/sa5104an: ld.so.cache
+Only in /home/sa5104an: ld.so.conf
+Only in /home/sa5104an: ld.so.conf.d
+Only in /home/sa5104an: libblockdev
+Only in /home/sa5104an: libibverbs.d
+Only in /home/sa5104an: libnl
+Only in /home/sa5104an: libpaper.d
+Only in /home/sa5104an: libreport
+Only in /home/sa5104an: libssh
+Only in /home/sa5104an: libuser.conf
+Only in /home/sa5104an: libvirt
+Only in /home/sa5104an: locale.conf
+Only in /home/sa5104an: localtime
+Only in /home/sa5104an: login.defs
+Only in /home/sa5104an: logrotate.conf
+Only in /home/sa5104an: logrotate.d
+Only in /home/sa5104an: lsb-release.d
+Only in /home/sa5104an: lsm
+Only in /home/sa5104an: lvm
+Only in /home/sa5104an: machine-id
+Only in /home/sa5104an: magic
+Only in /home/sa5104an: mailcap
+Only in /home/sa5104an: makedumpfile.conf.sample
+Only in /home/sa5104an: man_db.conf
+Only in /home/sa5104an: mcelog
+Only in /home/sa5104an: mft
+Only in /home/sa5104an: microcode_ctl
+Only in /home/sa5104an: mime.types
+Only in /home/sa5104an: mke2fs.conf
+Only in /home/sa5104an: modprobe.conf
+Only in /home/sa5104an: modprobe.d
+Only in /home/sa5104an: modulefiles
+Only in /home/sa5104an: modules-load.d
+Only in /home/sa5104an: motd
+Only in /home/sa5104an: motd.d
+Only in /home/sa5104an: mtab
+Only in /home/sa5104an: multipath
+Only in /home/sa5104an: munge
+Only in /home/sa5104an: my.cnf
+Only in /home/sa5104an: my.cnf.d
+Only in /home/sa5104an: myfirstfile.txt
+Only in /home/sa5104an: nanorc
+Only in /home/sa5104an: netconfig
+Only in /home/sa5104an: networks
+Only in /home/sa5104an: nfs.conf
+Only in /home/sa5104an: nfsmount.conf
+Only in /home/sa5104an: nftables
+Only in /home/sa5104an: nsswitch.conf
+Only in /home/sa5104an: nsswitch.conf.bak
+Only in /home/sa5104an: nvidia
+Only in /home/sa5104an: nvme
+Only in /home/sa5104an: odbc.ini
+Only in /home/sa5104an: odbcinst.ini
+Only in /home/sa5104an: oddjob
+Only in /home/sa5104an: oddjobd.conf
+Only in /home/sa5104an: oddjobd.conf.d
+Only in /home/sa5104an: openal
+Only in /home/sa5104an: openldap
+Only in /home/sa5104an: opensm
+Only in /home/sa5104an: opt
+Only in /home/sa5104an: os-release
+Only in /home/sa5104an: ostree
+Only in /home/sa5104an: pam.d
+Only in /home/sa5104an: pam_radius.conf
+Only in /home/sa5104an: papersize
+Only in /home/sa5104an: passwd
+Only in /home/sa5104an: passwd-
+Only in /home/sa5104an: passwdaliases
+Only in /home/sa5104an: pbm2ppa.conf
+Only in /home/sa5104an: pcp
+Only in /home/sa5104an: pcp.conf
+Only in /home/sa5104an: pcp.env
+Only in /home/sa5104an: pesign
+Only in /home/sa5104an: pinforc
+Only in /home/sa5104an: pkcs11
+Only in /home/sa5104an: pkgconfig
+Only in /home/sa5104an: pki
+Only in /home/sa5104an: plymouth
+Only in /home/sa5104an: pm
+Only in /home/sa5104an: pmix
+Only in /home/sa5104an: pnm2ppa.conf
+Only in /home/sa5104an: polkit-1
+Only in /home/sa5104an: popt.d
+Only in /home/sa5104an: postfix
+Only in /home/sa5104an: printcap
+Only in /home/sa5104an: profile
+Only in /home/sa5104an: profile.d
+Only in /home/sa5104an: protocols
+Only in /home/sa5104an: pulse
+Only in /home/sa5104an: qemu-ga
+Only in /home/sa5104an: ras
+Only in /home/sa5104an: rc.d
+Only in /home/sa5104an: rc.local
+Only in /home/sa5104an: rdma
+Only in /home/sa5104an: redhat-lsb
+Only in /home/sa5104an: redhat-release
+Only in /home/sa5104an: request-key.conf
+Only in /home/sa5104an: request-key.d
+Only in /home/sa5104an: resolv.conf
+Only in /home/sa5104an: rocky-release
+Only in /home/sa5104an: rocky-release-upstream
+Only in /home/sa5104an: rpc
+Only in /home/sa5104an: rpm
+Only in /home/sa5104an: rpmdevtools
+Only in /home/sa5104an: rshim.conf
+Only in /home/sa5104an: rsyncd.conf
+Only in /home/sa5104an: rsyslog.conf
+Only in /home/sa5104an: rsyslog.d
+Only in /home/sa5104an: rwtab.d
+Only in /home/sa5104an: s-nail.rc
+Only in /home/sa5104an: sam_tutorials
+Only in /home/sa5104an: samba
+Only in /home/sa5104an: samuel_anand_homework3.tgz
+Only in /home/sa5104an: sane.d
+Only in /home/sa5104an: sasl2
+Only in /home/sa5104an: scl
+Only in /home/sa5104an: screenrc
+Only in /home/sa5104an: security
+Only in /home/sa5104an: selinux
+Only in /home/sa5104an: sensors.d
+Only in /home/sa5104an: sensors3.conf
+Only in /home/sa5104an: services
+Only in /home/sa5104an: sestatus.conf
+Only in /home/sa5104an: setroubleshoot
+Only in /home/sa5104an: sgml
+Only in /home/sa5104an: shells
+Only in /home/sa5104an: slurm
+Only in /home/sa5104an: smartmontools
+Only in /home/sa5104an: sos
+Only in /home/sa5104an: speech-dispatcher
+Only in /home/sa5104an: srp_daemon.conf
+Only in /home/sa5104an: ssh
+Only in /home/sa5104an: ssl
+Only in /home/sa5104an: sssd
+Only in /home/sa5104an: statetab.d
+Only in /home/sa5104an: subgid
+Only in /home/sa5104an: subuid
+Only in /home/sa5104an: subversion
+Only in /home/sa5104an: sudoers.d
+Only in /home/sa5104an: sysconfig
+Only in /home/sa5104an: sysctl.conf
+Only in /home/sa5104an: sysctl.d
+Only in /home/sa5104an: system-release
+Only in /home/sa5104an: system-release-cpe
+Only in /home/sa5104an: systemd
+Only in /home/sa5104an: target
+Only in /home/sa5104an: terminfo
+Only in /home/sa5104an: tigrc
+Only in /home/sa5104an: tmpfiles.d
+Only in /home/sa5104an: tpm2-tss
+Only in /home/sa5104an: trusted-key.key
+Only in /home/sa5104an: tuned
+Only in /home/sa5104an: ucx
+Only in /home/sa5104an: udev
+Only in /home/sa5104an: udisks2
+Only in /home/sa5104an: unbound
+Only in /home/sa5104an: updatedb.conf
+Only in /home/sa5104an: usb_modeswitch.conf
+Only in /home/sa5104an: vconsole.conf
+Only in /home/sa5104an: vdpau_wrapper.cfg
+Only in /home/sa5104an: vimrc
+Only in /home/sa5104an: virc
+Only in /home/sa5104an: vmware-tools
+Only in /home/sa5104an: vulkan
+Only in /home/sa5104an: wgetrc
+Only in /home/sa5104an: wireplumber
+Only in /home/sa5104an: wont_compile.cxx
+Only in /home/sa5104an: wpa_supplicant
+Only in /home/sa5104an: xattr.conf
+Only in /home/sa5104an: xdg
+Only in /home/sa5104an: xml
+Only in /home/sa5104an: yum
+Only in /home/sa5104an: yum.conf
+Only in /home/sa5104an: yum.repos.d
+Only in /home/sa5104an: zabbix
+Only in /home/sa5104an: zlogin
+Only in /home/sa5104an: zlogout
+Only in /home/sa5104an: zprofile
+Only in /home/sa5104an: zshenv
+Only in /home/sa5104an: zshrc
